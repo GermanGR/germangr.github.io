@@ -1,0 +1,110 @@
+
+@charset "UTF-8";
+
+html{ 
+    background: url(../images/iliminacionexterior3.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+
+}
+
+html, body {
+    margin: 0;
+}
+*,*:before, *:after {
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    grid-gap: 5px ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+  
+ }
+
+ h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+}
+p{
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+}
+
+ .text { 
+    grid-area: 2 / 2 / 2 / 3;
+    z-index: 5;
+ }
+
+ 
+
+/*.container { 
+     background-color: blanchedalmond;
+ } */
+
+
+
+@-ms-viewport { 
+    width: device-width;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-family: 'Anton', sans-serif;
+        font-size: 3rem;
+    }
+    p{
+        font-family: 'Anton', sans-serif;
+        font-size: 2rem;
+    }
+    
+     .text { 
+        grid-area: 2 / 2 / 3 / 3 ;
+        z-index: 2;
+     }
+}
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { 
+   h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 3rem;
+  }
+  p{
+      font-family: 'Anton', sans-serif;
+      font-size: 2rem;
+  }
+  
+   .text { 
+      grid-area: 1 / 4 / 4 / 4 ;
+      z-index: 2;
+   }
+  
+  
+  
+  /* .container { 
+       background-color: rgb(79, 255, 9);
+   }*/
+   }
+  
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+     }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    }
